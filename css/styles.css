@@ -143,7 +143,10 @@ p {
   font-size: 1em;
 }
 
-h1 .logo-101,
+h1 .logo-101 {
+  font-size: 1.2em;
+}
+
 h1 .logo-monroe {
   font-size: 1em;
 }
@@ -432,11 +435,15 @@ h1 .logo-monroe {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.75rem;
   font-size: 1.375rem;
+  max-width: none;
 }
 
 .hero__content .micro {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2.5rem;
+  max-width: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__buttons {
