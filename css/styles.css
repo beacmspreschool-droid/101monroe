@@ -120,6 +120,34 @@ p {
   margin-bottom: 0.5rem;
 }
 
+/* ---------- 101 MONROE Logo Styling ---------- */
+.logo-101 {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.logo-monroe {
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.nav__logo .logo-101,
+.nav__logo .logo-monroe {
+  font-size: 1em;
+}
+
+.footer__brand .logo-101,
+.footer__brand .logo-monroe {
+  font-size: 1em;
+}
+
+h1 .logo-101,
+h1 .logo-monroe {
+  font-size: 1em;
+}
+
 /* ---------- Layout ---------- */
 .container {
   max-width: 1200px;
@@ -294,7 +322,7 @@ p {
   font-weight: 600;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .nav__links {
     display: none;
   }
@@ -611,6 +639,105 @@ p {
   color: var(--hemlock);
 }
 
+/* ---------- Units Grid (Apartments Section) ---------- */
+.units-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.unit-card {
+  background-color: var(--plaster);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.unit-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+}
+
+.unit-card__image {
+  position: relative;
+  aspect-ratio: 4/3;
+  background-color: var(--white);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.unit-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 1rem;
+  transition: transform 0.3s;
+}
+
+.unit-card:hover .unit-card__image img {
+  transform: scale(1.02);
+}
+
+.unit-card__zoom {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 36px;
+  height: 36px;
+  background-color: var(--white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--hemlock);
+  box-shadow: var(--shadow-sm);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.unit-card:hover .unit-card__zoom {
+  opacity: 1;
+}
+
+.unit-card__content {
+  padding: 1.25rem 1.5rem;
+  background-color: var(--white);
+}
+
+.unit-card__content h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.unit-card__details {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.9375rem;
+  color: var(--charcoal-light);
+}
+
+.unit-card__details span {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.unit-card__details span:not(:last-child)::after {
+  content: '•';
+  margin-left: 1rem;
+  color: var(--plaster-dark);
+}
+
+.floorplan-disclaimer {
+  font-size: 0.875rem;
+  color: var(--charcoal-light);
+  font-style: italic;
+  text-align: center;
+  margin-top: 1rem;
+}
+
 /* ---------- Before Photos Section ---------- */
 .before-grid {
   display: grid;
@@ -787,6 +914,7 @@ p {
   border-radius: var(--radius-md);
   overflow: hidden;
   background-color: var(--plaster-dark);
+  cursor: pointer;
 }
 
 .progress-photo img {
@@ -798,22 +926,40 @@ p {
 /* ---------- About Section ---------- */
 .about {
   display: grid;
-  grid-template-columns: 300px 1fr;
+  grid-template-columns: 320px 1fr;
   gap: 3rem;
   align-items: start;
+}
+
+.about__images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: sticky;
+  top: 100px;
 }
 
 .about__image {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow-md);
-  position: sticky;
-  top: 100px;
 }
 
 .about__image img {
   width: 100%;
   height: auto;
+}
+
+.about__image--family {
+  position: relative;
+}
+
+.about__image-caption {
+  font-size: 0.8125rem;
+  color: var(--charcoal-light);
+  text-align: center;
+  margin-top: 0.5rem;
+  font-style: italic;
 }
 
 .about__content h2 {
@@ -829,15 +975,34 @@ p {
   margin-bottom: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .about {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   
-  .about__image {
-    max-width: 250px;
+  .about__images {
+    flex-direction: row;
     position: static;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+  }
+  
+  .about__image {
+    flex: 0 0 250px;
+  }
+}
+
+@media (max-width: 540px) {
+  .about__images {
+    flex-direction: column;
+  }
+  
+  .about__image {
+    flex: 0 0 auto;
+    max-width: 300px;
   }
 }
 
@@ -1215,6 +1380,10 @@ p {
   font-weight: 500;
 }
 
+.cta-banner span {
+  color: var(--hemlock);
+}
+
 /* ---------- Utilities ---------- */
 .text-center { text-align: center; }
 .mb-0 { margin-bottom: 0 !important; }
@@ -1224,6 +1393,7 @@ p {
 .mb-4 { margin-bottom: 2rem; }
 .mb-5 { margin-bottom: 3rem; }
 .mt-4 { margin-top: 2rem; }
+.mt-5 { margin-top: 3rem; }
 
 /* ---------- Animations ---------- */
 @keyframes fadeInUp {
