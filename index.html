@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>101 Monroe | Boutique Apartments in Brooklyn, Michigan</title>
+  <meta name="description" content="Six boutique apartments in a beautifully restored 1868 building in downtown Brooklyn, Michigan. Join the interest list for Summer 2026 availability.">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="101 Monroe | Boutique Apartments in Brooklyn, Michigan">
+  <meta property="og:description" content="Six boutique apartments in a beautifully restored 1868 building in downtown Brooklyn, Michigan.">
+  <meta property="og:image" content="images/hero.png">
+  <meta property="og:url" content="https://101monroe.com">
+  <meta property="og:type" content="website">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo">101 MONROE</a>
+      
+      <ul class="nav__links">
+        <li><a href="#renderings" class="nav__link">Renderings</a></li>
+        <li><a href="#photos" class="nav__link">Photos</a></li>
+        <li><a href="#history" class="nav__link">History</a></li>
+        <li><a href="#progress" class="nav__link">Progress</a></li>
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#interest-form" class="nav__cta" data-modal="interest-form">Join Interest List</a></li>
+      </ul>
+      
+      <button class="nav__mobile-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <div class="mobile-menu__header">
+      <span class="nav__logo">101 MONROE</span>
+      <button class="mobile-menu__close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <a href="#renderings" class="mobile-menu__link">Renderings</a>
+    <a href="#photos" class="mobile-menu__link">Photos</a>
+    <a href="#history" class="mobile-menu__link">History</a>
+    <a href="#progress" class="mobile-menu__link">Progress</a>
+    <a href="#about" class="mobile-menu__link">About</a>
+    <a href="#interest-form" class="mobile-menu__cta" data-modal="interest-form">Join Interest List</a>
+  </div>
+
+  <!-- Floating CTA -->
+  <button class="floating-cta" data-modal="interest-form">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+      <path d="M22 6l-10 7L2 6"/>
+    </svg>
+    Join Interest List
+  </button>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__bg">
+        <img src="images/hero.png" alt="101 Monroe building rendering">
+        <div class="hero__overlay"></div>
+      </div>
+      <div class="hero__content">
+        <h1>101 Monroe</h1>
+        <p class="subhead">Boutique apartments in Downtown Brooklyn, Michigan</p>
+        <p class="micro">Restoring a historic 1868 building into six new residences.</p>
+        <div class="hero__buttons">
+          <a href="#interest-form" class="btn btn--primary" data-modal="interest-form">Join Interest List</a>
+          <a href="#renderings" class="btn btn--outline">View Apartment Renderings</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Apartment Renderings Gallery -->
+    <section id="renderings" class="section">
+      <div class="container">
+        <p class="section-label">What's Coming</p>
+        <h2>Apartment Renderings</h2>
+        
+        <div class="gallery__filters">
+          <button class="gallery__filter active" data-filter="all">All</button>
+          <button class="gallery__filter" data-filter="kitchen">Kitchen</button>
+          <button class="gallery__filter" data-filter="living">Living</button>
+          <button class="gallery__filter" data-filter="bedroom">Bedroom</button>
+          <button class="gallery__filter" data-filter="bathroom">Bathroom</button>
+        </div>
+        
+        <div class="gallery__grid">
+          <!-- Item 1 -->
+          <div class="gallery__item" data-category="living" data-lightbox="images/renderings/living-kitchen.png" data-caption="Open-concept living and kitchen">
+            <img src="images/renderings/living-kitchen.png" alt="Open-concept living and kitchen" loading="lazy">
+            <div class="gallery__item-overlay">
+              <span class="gallery__item-label">Living & Kitchen</span>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-3.png" data-caption="Kitchen with island and arched windows">
+            <img src="images/renderings/kitchen-3.png" alt="Kitchen with island and arched windows" loading="lazy">
+            <div class="gallery__item-overlay">
+              <span class="gallery__item-label">Kitchen</span>
+            </div>
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-1.png" data-caption="Modern kitchen with natural light">
+            <img src="images/renderings/kitchen-1.png" alt="Modern kitchen with natural light" loading="lazy">
+            <div class="gallery__item-overlay">
+              <span class="gallery__item-label">Kitchen</span>
+            </div>
+          </div>
+          
+          <!-- Item 4 -->
+          <div class="gallery__item" data-category="bedroom" data-lightbox="images/renderings/bedroom.png" data-caption="Bedroom with arched window">
+            <img src="images/renderings/bedroom.png" alt="Bedroom with arched window" loading="lazy">
+            <div class="gallery__item-overlay">
+              <span class="gallery__item-label">Bedroom</span>
+            </div>
+          </div>
+          
+          <!-- Mid-Gallery CTA Card -->
+          <div class="gallery__cta-card">
+            <h3>Interested?</h3>
+            <p>Be first to know when floor plans and pricing are released.</p>
+            <button class="btn" data-modal="interest-form">Join Interest List</button>
+          </div>
+          
+          <!-- Item 5 -->
+          <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-2.png" data-caption="Kitchen layout option">
+            <img src="images/renderings/kitchen-2.png" alt="Kitchen layout option" loading="lazy">
+            <div class="gallery__item-overlay">
+              <span class="gallery__item-label">Kitchen</span>
+            </div>
+          </div>
+          
+          <!-- Item 6 -->
+          <div class="gallery__item" data-category="bathroom" data-lightbox="images/renderings/bathroom.png" data-caption="Modern bathroom with classic details">
+            <img src="images/renderings/bathroom.png" alt="Modern bathroom with classic details" loading="lazy">
+            <div class="gallery__item-overlay">
+              <span class="gallery__item-label">Bathroom</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="gallery__footer">
+          <p>Interested in this layout? <span>Expected availability: Summer 2026</span></p>
+          <button class="btn btn--primary btn--small" data-modal="interest-form">Join Interest List</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Building Photos -->
+    <section id="photos" class="section section--alt">
+      <div class="container">
+        <p class="section-label">Existing Conditions</p>
+        <h2>The Building Today</h2>
+        
+        <div class="before-grid">
+          <div class="before-item" data-lightbox="images/before/exterior-1.png" data-caption="101 Monroe exterior - before restoration">
+            <img src="images/before/exterior-1.png" alt="Building exterior before restoration" loading="lazy">
+            <div class="before-item__caption">Original brickwork</div>
+          </div>
+          
+          <div class="before-item" data-lightbox="images/before/exterior-2.png" data-caption="Front facade view">
+            <img src="images/before/exterior-2.png" alt="Front facade before restoration" loading="lazy">
+            <div class="before-item__caption">Historic facade</div>
+          </div>
+          
+          <div class="before-item" data-lightbox="images/before/interior-2.png" data-caption="Original arched windows">
+            <img src="images/before/interior-2.png" alt="Original arched windows" loading="lazy">
+            <div class="before-item__caption">Arched windows</div>
+          </div>
+          
+          <div class="before-item" data-lightbox="images/before/interior-1.png" data-caption="Upper floor interior">
+            <img src="images/before/interior-1.png" alt="Upper floor interior" loading="lazy">
+            <div class="before-item__caption">Upper floor</div>
+          </div>
+          
+          <div class="before-item" data-lightbox="images/before/interior-5.png" data-caption="Third floor space">
+            <img src="images/before/interior-5.png" alt="Third floor space" loading="lazy">
+            <div class="before-item__caption">Third floor</div>
+          </div>
+          
+          <div class="before-item" data-lightbox="images/before/interior-3.png" data-caption="Historic interior details">
+            <img src="images/before/interior-3.png" alt="Historic interior with original details" loading="lazy">
+            <div class="before-item__caption">Original details</div>
+          </div>
+        </div>
+        
+        <div class="cta-banner mt-4">
+          <p>Want updates + leasing info?</p>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join Interest List</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- History Section -->
+    <section id="history" class="section">
+      <div class="container">
+        <div class="history">
+          <div class="history__image">
+            <img src="images/brooklyn.png" alt="Historic Brooklyn, Michigan">
+          </div>
+          <div class="history__content">
+            <p class="section-label">Our Story</p>
+            <h2>A Building Worth Saving</h2>
+            <p>
+              Built in 1868, 101 Monroe has anchored the corner of Brooklyn's village square for over 150 years. Through the decades, it served as a general store, professional offices, and community gathering place—witnessing the town's growth from a rural crossroads to a beloved destination in Michigan's Irish Hills.
+            </p>
+            <p>
+              After years of vacancy, the building is being thoughtfully restored into six distinctive apartments. Each unit will blend historic character—original brick, tall ceilings, those beautiful arched windows—with modern amenities and efficient layouts designed for comfortable, everyday living.
+            </p>
+            <p>
+              This isn't just a renovation. It's an opportunity to bring new life to a building that has meant something to this community for generations.
+            </p>
+            
+            <div class="fast-facts">
+              <div class="fast-fact">
+                <div class="fast-fact__value">1868</div>
+                <div class="fast-fact__label">Built</div>
+              </div>
+              <div class="fast-fact">
+                <div class="fast-fact__value">~10,770</div>
+                <div class="fast-fact__label">Square Feet</div>
+              </div>
+              <div class="fast-fact">
+                <div class="fast-fact__value">6</div>
+                <div class="fast-fact__label">Apartments</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="cta-banner mt-5">
+          <p>Be first to hear about floor plans + pricing.</p>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join Interest List</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Construction Progress -->
+    <section id="progress" class="section section--alt">
+      <div class="container">
+        <p class="section-label">Construction</p>
+        <h2>Progress Updates</h2>
+        
+        <div class="progress-update">
+          <div class="progress-update__header">
+            <span class="progress-update__badge">Latest Update</span>
+            <span class="progress-update__date">January 2025</span>
+          </div>
+          <h3 class="progress-update__title">Framing Underway</h3>
+          <ul class="progress-update__list">
+            <li>Structural repairs completed on upper floors</li>
+            <li>New framing going up for apartment layouts</li>
+            <li>Windows on order — historic profiles, modern efficiency</li>
+          </ul>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Get Updates + Leasing Info</button>
+        </div>
+        
+        <h3 class="mb-3">Progress Photos</h3>
+        <div class="progress-photos">
+          <div class="progress-photo" data-lightbox="images/progress/demo.png" data-caption="Demo work on main floor">
+            <img src="images/progress/demo.png" alt="Demo work in progress" loading="lazy">
+          </div>
+          <div class="progress-photo" data-lightbox="images/progress/framing.png" data-caption="New framing underway">
+            <img src="images/progress/framing.png" alt="Framing in progress" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about">
+          <div class="about__image">
+            <img src="images/bea.jpg" alt="Beatrice Nestor">
+          </div>
+          <div class="about__content">
+            <p class="section-label">Developer</p>
+            <h2>About the Developer</h2>
+            <p>
+              I grew up in Addison, Michigan, on my family's seventh-generation crop farm—a place that gave me a deep sense of rootedness and an early appreciation for land with history, purpose, and community meaning. That upbringing shaped my love for place and my belief in the lasting impact of caring well for what's been passed down.
+            </p>
+            <p>
+              After high school, a restlessness to expand my horizons took me to Cornell, where I met my husband, Patrick. From there, we built a life together across New York City, Ann Arbor, Boston, and The Netherlands.
+            </p>
+            <p>
+              In January of 2025, we returned to Michigan, ready to put down roots. On a trip to see our new home, I spotted 101 Monroe—and it was love at first sight. What began as a spark quickly grew into a full-scale redevelopment effort, and over the past year I've been deeply immersed in every aspect of bringing the building back to life.
+            </p>
+            <p>
+              Professionally, my career has focused on building and scaling operations in the tech and consulting space—often in complex, fast-moving environments. I've had the opportunity to build global operations from the ground up, launching new teams and delivery centers across the U.S., Europe, India, and Mexico. That operational background shapes how I approach development today: a deep drive to get things done and keep the project moving forward, while immersing myself in the details and seeking to learn from others.
+            </p>
+            <p>
+              Patrick and I have three children—Jack, Lewis, and Ellen—along with our ever-cheerful black lab, Gus. When I'm not thinking about utility hookups or construction schedules, I love running, reading just about anything, and leaving my phone behind to sit, chat, and enjoy an afternoon cup of tea.
+            </p>
+            <p class="mb-0"><strong>— Beatrice Nestor</strong></p>
+          </div>
+        </div>
+        
+        <div class="cta-banner mt-5">
+          <p>Questions? Want to connect?</p>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join Interest List</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interest Form Section -->
+    <section id="form-section" class="section section--hemlock">
+      <div class="container">
+        <div class="form-section">
+          <div class="form-section__header">
+            <h2>Join the Interest List</h2>
+            <p>Be first to know when floor plans and pricing are released. We'll also send occasional construction updates.</p>
+          </div>
+          
+          <div class="form">
+            <!-- SUCCESS MESSAGE -->
+            <div class="form__success">
+              <div class="form__success-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 6L9 17l-5-5"/>
+                </svg>
+              </div>
+              <h3>Thanks for your interest!</h3>
+              <p>We'll reach out when floor plans and leasing details are released.</p>
+            </div>
+            
+            <!-- 
+              =====================================================
+              FORMSPREE SETUP:
+              1. Go to formspree.io and create a free account
+              2. Create a new form
+              3. Replace "mregwkor" below with your form ID
+              =====================================================
+            -->
+            <form action="https://formspree.io/f/mregwkor" method="POST" data-formspree>
+              <input type="hidden" name="_subject" value="New 101 Monroe Interest Form Submission">
+              
+              <!-- Contact Info -->
+              <div class="form__section">
+                <div class="form__section-title">Contact Information</div>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label form__label--required" for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form__input" required>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label form__label--required" for="email">Email</label>
+                    <input type="email" id="email" name="email" class="form__input" required>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="phone">Phone <span style="font-weight: 400; color: var(--charcoal-light);">(recommended)</span></label>
+                    <input type="tel" id="phone" name="phone" class="form__input">
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Apartment Needs -->
+              <div class="form__section">
+                <div class="form__section-title">Apartment Preferences</div>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label form__label--required" for="unit_type">Desired Unit Type</label>
+                    <select id="unit_type" name="unit_type" class="form__select" required>
+                      <option value="">Select...</option>
+                      <option value="1BR">1 Bedroom</option>
+                      <option value="2BR">2 Bedroom</option>
+                      <option value="Flexible">Flexible</option>
+                    </select>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label form__label--required" for="move_in">Target Move-In</label>
+                    <select id="move_in" name="move_in" class="form__select" required>
+                      <option value="">Select...</option>
+                      <option value="July 2026">July 2026</option>
+                      <option value="August 2026">August 2026</option>
+                      <option value="September 2026">September 2026</option>
+                      <option value="Flexible">Flexible</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label form__label--required" for="budget">Monthly Rent Budget</label>
+                    <select id="budget" name="budget" class="form__select" required>
+                      <option value="">Select...</option>
+                      <option value="Under $1,000">Under $1,000</option>
+                      <option value="$1,000 - $1,200">$1,000 – $1,200</option>
+                      <option value="$1,200 - $1,500">$1,200 – $1,500</option>
+                      <option value="$1,500 - $1,800">$1,500 – $1,800</option>
+                      <option value="$1,800 - $2,100">$1,800 – $2,100</option>
+                      <option value="$2,100 - $2,300">$2,100 – $2,300</option>
+                      <option value="$2,300+">$2,300+</option>
+                    </select>
+                  </div>
+                  <div class="form__group">
+                    <label class="form__label" for="occupants">Number of Occupants</label>
+                    <select id="occupants" name="occupants" class="form__select">
+                      <option value="">Select...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4+">4+</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Pets & Parking -->
+              <div class="form__section">
+                <div class="form__section-title">Pets & Parking</div>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="pets">Pets?</label>
+                    <select id="pets" name="pets" class="form__select">
+                      <option value="">Select...</option>
+                      <option value="No">No</option>
+                      <option value="Yes - Dog">Yes — Dog</option>
+                      <option value="Yes - Cat">Yes — Cat</option>
+                      <option value="Yes - Both">Yes — Both</option>
+                    </select>
+                  </div>
+                  <div class="form__group pet-count-group" style="display: none;">
+                    <label class="form__label" for="pet_count">Number of Pets</label>
+                    <select id="pet_count" name="pet_count" class="form__select">
+                      <option value="">Select...</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3+">3+</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form__row">
+                  <div class="form__group">
+                    <label class="form__label" for="parking">Parking Spaces Needed</label>
+                    <select id="parking" name="parking" class="form__select">
+                      <option value="">Select...</option>
+                      <option value="0">0</option>
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Additional Notes -->
+              <div class="form__section">
+                <div class="form__section-title">Anything Else?</div>
+                <div class="form__group">
+                  <label class="form__label" for="notes">Additional notes or questions</label>
+                  <textarea id="notes" name="notes" class="form__textarea" placeholder="Is there anything else we should know?"></textarea>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn btn--primary form__submit">Submit Interest</button>
+              <p class="form__note">We'll reach out when floor plans + leasing details are released.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__content">
+        <div>
+          <div class="footer__brand">101 MONROE</div>
+          <p class="footer__location">Brooklyn, Michigan</p>
+        </div>
+        <div class="footer__contact">
+          <a href="mailto:beatrice.nestor@gmail.com">beatrice.nestor@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© <span class="current-year">2025</span> 101 Monroe. All rights reserved.</span>
+        <span>Renderings are conceptual and subject to change.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal" id="interest-modal">
+    <div class="modal__overlay"></div>
+    <div class="modal__container">
+      <div class="modal__header">
+        <h3 class="modal__title">Join the Interest List</h3>
+        <button class="modal__close" aria-label="Close modal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal__body">
+        <div class="form">
+          <!-- SUCCESS MESSAGE -->
+          <div class="form__success">
+            <div class="form__success-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+            <h3>Thanks for your interest!</h3>
+            <p>We'll reach out when floor plans and leasing details are released.</p>
+          </div>
+          
+          <form action="https://formspree.io/f/mregwkor" method="POST" data-formspree>
+            <input type="hidden" name="_subject" value="New 101 Monroe Interest Form Submission (Modal)">
+            
+            <!-- Contact Info -->
+            <div class="form__section">
+              <div class="form__section-title">Contact Information</div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label form__label--required" for="modal_name">Full Name</label>
+                  <input type="text" id="modal_name" name="name" class="form__input" required>
+                </div>
+                <div class="form__group">
+                  <label class="form__label form__label--required" for="modal_email">Email</label>
+                  <input type="email" id="modal_email" name="email" class="form__input" required>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="modal_phone">Phone <span style="font-weight: 400; color: var(--charcoal-light);">(recommended)</span></label>
+                  <input type="tel" id="modal_phone" name="phone" class="form__input">
+                </div>
+              </div>
+            </div>
+            
+            <!-- Apartment Needs -->
+            <div class="form__section">
+              <div class="form__section-title">Apartment Preferences</div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label form__label--required" for="modal_unit_type">Desired Unit Type</label>
+                  <select id="modal_unit_type" name="unit_type" class="form__select" required>
+                    <option value="">Select...</option>
+                    <option value="1BR">1 Bedroom</option>
+                    <option value="2BR">2 Bedroom</option>
+                    <option value="Flexible">Flexible</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label class="form__label form__label--required" for="modal_move_in">Target Move-In</label>
+                  <select id="modal_move_in" name="move_in" class="form__select" required>
+                    <option value="">Select...</option>
+                    <option value="July 2026">July 2026</option>
+                    <option value="August 2026">August 2026</option>
+                    <option value="September 2026">September 2026</option>
+                    <option value="Flexible">Flexible</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label form__label--required" for="modal_budget">Monthly Rent Budget</label>
+                  <select id="modal_budget" name="budget" class="form__select" required>
+                    <option value="">Select...</option>
+                    <option value="Under $1,000">Under $1,000</option>
+                    <option value="$1,000 - $1,200">$1,000 – $1,200</option>
+                    <option value="$1,200 - $1,500">$1,200 – $1,500</option>
+                    <option value="$1,500 - $1,800">$1,500 – $1,800</option>
+                    <option value="$1,800 - $2,100">$1,800 – $2,100</option>
+                    <option value="$2,100 - $2,300">$2,100 – $2,300</option>
+                    <option value="$2,300+">$2,300+</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="modal_occupants">Number of Occupants</label>
+                  <select id="modal_occupants" name="occupants" class="form__select">
+                    <option value="">Select...</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Pets & Parking -->
+            <div class="form__section">
+              <div class="form__section-title">Pets & Parking</div>
+              <div class="form__row">
+                <div class="form__group">
+                  <label class="form__label" for="modal_pets">Pets?</label>
+                  <select id="modal_pets" name="pets" class="form__select">
+                    <option value="">Select...</option>
+                    <option value="No">No</option>
+                    <option value="Yes - Dog">Yes — Dog</option>
+                    <option value="Yes - Cat">Yes — Cat</option>
+                    <option value="Yes - Both">Yes — Both</option>
+                  </select>
+                </div>
+                <div class="form__group">
+                  <label class="form__label" for="modal_parking">Parking Spaces Needed</label>
+                  <select id="modal_parking" name="parking" class="form__select">
+                    <option value="">Select...</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Additional Notes -->
+            <div class="form__section">
+              <div class="form__section-title">Anything Else?</div>
+              <div class="form__group">
+                <label class="form__label" for="modal_notes">Additional notes or questions</label>
+                <textarea id="modal_notes" name="notes" class="form__textarea" placeholder="Is there anything else we should know?"></textarea>
+              </div>
+            </div>
+            
+            <button type="submit" class="btn btn--primary form__submit">Submit Interest</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox -->
+  <div class="lightbox">
+    <button class="lightbox__close" aria-label="Close lightbox">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--prev" aria-label="Previous image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="lightbox__nav lightbox__nav--next" aria-label="Next image">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+    <img class="lightbox__image" src="" alt="">
+    <div class="lightbox__caption"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
