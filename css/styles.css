@@ -1362,6 +1362,110 @@ h1 .logo-monroe {
   color: rgba(243, 241, 236, 0.5);
 }
 
+/* ---------- Tenant Cards (Commercial Section) ---------- */
+.tenants-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 500px) {
+  .tenants-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tenant-card {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.tenant-card--featured {
+  border: 2px solid var(--hemlock);
+}
+
+.tenant-card--placeholder {
+  background-color: var(--plaster);
+  border: 2px dashed var(--plaster-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+
+.tenant-card__logo {
+  padding: 2rem;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--plaster-dark);
+}
+
+.tenant-card__logo img {
+  max-height: 90px;
+  width: auto;
+}
+
+.tenant-card__content {
+  padding: 2rem;
+}
+
+.tenant-card__content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.tenant-card__meta {
+  font-size: 0.9375rem;
+  color: var(--hemlock);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.tenant-card__description {
+  color: var(--charcoal-light);
+  margin-bottom: 1.25rem;
+}
+
+.tenant-card__features {
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.tenant-card__features li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--charcoal-light);
+  font-size: 0.9375rem;
+}
+
+.tenant-card__features li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 6px;
+  height: 6px;
+  background-color: var(--hemlock);
+  border-radius: 50%;
+}
+
+.tenant-card--placeholder .tenant-card__content {
+  text-align: center;
+}
+
+.tenant-card--placeholder h3 {
+  color: var(--charcoal-light);
+}
+
+.tenant-card--placeholder .tenant-card__description {
+  margin-bottom: 1.5rem;
+}
+
 /* ---------- CTA Banner ---------- */
 .cta-banner {
   display: flex;

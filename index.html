@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>101 Monroe | Boutique Apartments in Brooklyn, Michigan</title>
-  <meta name="description" content="Six boutique apartments in a beautifully restored 1868 building in downtown Brooklyn, Michigan. Join the interest list for Summer 2026 availability.">
+  <meta name="description" content="Six boutique apartments and local businesses in a beautifully restored 1868 building in downtown Brooklyn, Michigan. Express interest for Summer 2026 availability.">
   
   <!-- Open Graph -->
   <meta property="og:title" content="101 Monroe | Boutique Apartments in Brooklyn, Michigan">
-  <meta property="og:description" content="Six boutique apartments in a beautifully restored 1868 building in downtown Brooklyn, Michigan.">
+  <meta property="og:description" content="Six boutique apartments and local businesses in a beautifully restored 1868 building in downtown Brooklyn, Michigan.">
   <meta property="og:image" content="images/hero.png">
   <meta property="og:url" content="https://101monroe.com">
   <meta property="og:type" content="website">
@@ -31,11 +31,12 @@
       <ul class="nav__links">
         <li><a href="#renderings" class="nav__link">Renderings</a></li>
         <li><a href="#apartments" class="nav__link">Apartments</a></li>
+        <li><a href="#commercial" class="nav__link">Commercial</a></li>
         <li><a href="#photos" class="nav__link">Photos</a></li>
         <li><a href="#history" class="nav__link">History</a></li>
         <li><a href="#progress" class="nav__link">Progress</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#interest-form" class="nav__cta" data-modal="interest-form">Join Interest List</a></li>
+        <li><a href="#interest-form" class="nav__cta" data-modal="interest-form">Express Apartment Interest</a></li>
       </ul>
       
       <button class="nav__mobile-toggle" aria-label="Open menu">
@@ -59,11 +60,12 @@
     </div>
     <a href="#renderings" class="mobile-menu__link">Renderings</a>
     <a href="#apartments" class="mobile-menu__link">Apartments</a>
+    <a href="#commercial" class="mobile-menu__link">Commercial</a>
     <a href="#photos" class="mobile-menu__link">Photos</a>
     <a href="#history" class="mobile-menu__link">History</a>
     <a href="#progress" class="mobile-menu__link">Progress</a>
     <a href="#about" class="mobile-menu__link">About</a>
-    <a href="#interest-form" class="mobile-menu__cta" data-modal="interest-form">Join Interest List</a>
+    <a href="#interest-form" class="mobile-menu__cta" data-modal="interest-form">Express Apartment Interest</a>
   </div>
 
   <!-- Floating CTA -->
@@ -72,7 +74,7 @@
       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
       <path d="M22 6l-10 7L2 6"/>
     </svg>
-    Join Interest List
+    Express Apartment Interest
   </button>
 
   <main>
@@ -84,10 +86,10 @@
       </div>
       <div class="hero__content">
         <h1><span class="logo-101">101</span> <span class="logo-monroe">Monroe</span></h1>
-        <p class="subhead">Boutique apartments in Downtown Brooklyn, Michigan</p>
-        <p class="micro">Restoring a historic 1868 building into six new residences.</p>
+        <p class="subhead">Boutique apartments and local businesses in the heart of Downtown Brooklyn, Michigan</p>
+        <p class="micro">Restoring a historic 1868 building into six thoughtfully designed residences, with ground-floor space for new local businesses.</p>
         <div class="hero__buttons">
-          <a href="#interest-form" class="btn btn--primary" data-modal="interest-form">Join Interest List</a>
+          <a href="#interest-form" class="btn btn--primary" data-modal="interest-form">Express Apartment Interest</a>
           <a href="#renderings" class="btn btn--outline">View Apartment Renderings</a>
         </div>
       </div>
@@ -144,7 +146,7 @@
           <div class="gallery__cta-card">
             <h3>Interested?</h3>
             <p>Be first to know when floor plans and pricing are released.</p>
-            <button class="btn" data-modal="interest-form">Join Interest List</button>
+            <button class="btn" data-modal="interest-form">Express Apartment Interest</button>
           </div>
           
           <!-- Item 5 -->
@@ -155,7 +157,15 @@
             </div>
           </div>
           
-          <!-- Item 6 -->
+          <!-- Item 6 - NEW -->
+          <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-4.png" data-caption="Kitchen with arched windows and pendant lights">
+            <img src="images/renderings/kitchen-4.png" alt="Kitchen with arched windows and pendant lights" loading="lazy">
+            <div class="gallery__item-overlay">
+              <span class="gallery__item-label">Kitchen</span>
+            </div>
+          </div>
+          
+          <!-- Item 7 -->
           <div class="gallery__item" data-category="bathroom" data-lightbox="images/renderings/bathroom.png" data-caption="Modern bathroom with classic details">
             <img src="images/renderings/bathroom.png" alt="Modern bathroom with classic details" loading="lazy">
             <div class="gallery__item-overlay">
@@ -166,7 +176,7 @@
         
         <div class="gallery__footer">
           <p>Interested in this layout? <span>Expected availability: Summer 2026</span></p>
-          <button class="btn btn--primary btn--small" data-modal="interest-form">Join Interest List</button>
+          <button class="btn btn--primary btn--small" data-modal="interest-form">Express Apartment Interest</button>
         </div>
       </div>
     </section>
@@ -311,13 +321,54 @@
         
         <div class="cta-banner mt-4">
           <p>Find a layout you like? <span>Get notified when leasing opens.</span></p>
-          <button class="btn btn--primary btn--small" data-modal="interest-form">Join Interest List</button>
+          <button class="btn btn--primary btn--small" data-modal="interest-form">Express Apartment Interest</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commercial Section -->
+    <section id="commercial" class="section">
+      <div class="container">
+        <p class="section-label">Ground Floor</p>
+        <h2>New Businesses in Downtown Brooklyn</h2>
+        <p class="mb-5">At 101 Monroe, we're proud to welcome small-business owners bringing fresh energy, great food, and thoughtful retail to the heart of Brooklyn.</p>
+        
+        <div class="tenants-grid">
+          <!-- Fetch Market & Deli -->
+          <div class="tenant-card tenant-card--featured">
+            <div class="tenant-card__logo">
+              <img src="images/fetch-logo.png" alt="Fetch Market & Deli logo">
+            </div>
+            <div class="tenant-card__content">
+              <h3>Fetch Market & Deli</h3>
+              <p class="tenant-card__meta">Corner Space • Opening Late 2026</p>
+              <p class="tenant-card__description">
+                Fetch Market & Deli is a thoughtfully curated specialty market featuring award-winning vegan cheeses, artisan cured meats, specialty food products, and decadent Bliss Bakeshop treats. Rooted in sustainability, zero waste, transparency, and ethical sourcing, it's designed to be your go-to for something extra—plus counter seating with a view of the village square.
+              </p>
+              <ul class="tenant-card__features">
+                <li>Specialty foods & treats</li>
+                <li>Values-led sourcing (zero waste, sustainability)</li>
+                <li>Counter seating with a view</li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- More Coming -->
+          <div class="tenant-card tenant-card--placeholder">
+            <div class="tenant-card__content">
+              <h3>More local businesses coming</h3>
+              <p class="tenant-card__description">
+                We're currently finalizing the next main-floor tenant. Stay tuned.
+              </p>
+              <a href="mailto:beatrice.nestor@gmail.com" class="btn btn--outline-dark btn--small">Inquire About Leasing</a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Building Photos -->
-    <section id="photos" class="section">
+    <section id="photos" class="section section--alt">
       <div class="container">
         <p class="section-label">Existing Conditions</p>
         <h2>The Building Today</h2>
@@ -356,13 +407,13 @@
         
         <div class="cta-banner mt-4">
           <p>Want updates + leasing info?</p>
-          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join Interest List</button>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Express Apartment Interest</button>
         </div>
       </div>
     </section>
 
     <!-- History Section -->
-    <section id="history" class="section section--alt">
+    <section id="history" class="section">
       <div class="container">
         <div class="history">
           <div class="history__image">
@@ -400,13 +451,13 @@
         
         <div class="cta-banner mt-5">
           <p>Be first to hear about floor plans + pricing.</p>
-          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join Interest List</button>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Express Apartment Interest</button>
         </div>
       </div>
     </section>
 
     <!-- Construction Progress -->
-    <section id="progress" class="section">
+    <section id="progress" class="section section--alt">
       <div class="container">
         <p class="section-label">Construction</p>
         <h2>Progress Updates</h2>
@@ -438,7 +489,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section section--alt">
+    <section id="about" class="section">
       <div class="container">
         <div class="about">
           <div class="about__images">
@@ -474,7 +525,7 @@
         
         <div class="cta-banner mt-5">
           <p>Questions? Want to connect?</p>
-          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join Interest List</button>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Express Apartment Interest</button>
         </div>
       </div>
     </section>
@@ -484,7 +535,7 @@
       <div class="container">
         <div class="form-section">
           <div class="form-section__header">
-            <h2>Join the Interest List</h2>
+            <h2>Express Apartment Interest</h2>
             <p>Be first to know when floor plans and pricing are released. We'll also send occasional construction updates.</p>
           </div>
           
@@ -500,14 +551,6 @@
               <p>We'll reach out when floor plans and leasing details are released.</p>
             </div>
             
-            <!-- 
-              =====================================================
-              FORMSPREE SETUP:
-              1. Go to formspree.io and create a free account
-              2. Create a new form
-              3. Replace "YOUR_FORM_ID" below with your form ID
-              =====================================================
-            -->
             <form action="https://formspree.io/f/mregwkor" method="POST" data-formspree>
               <input type="hidden" name="_subject" value="New 101 Monroe Interest Form Submission">
               
@@ -662,7 +705,7 @@
     <div class="modal__overlay"></div>
     <div class="modal__container">
       <div class="modal__header">
-        <h3 class="modal__title">Join the Interest List</h3>
+        <h3 class="modal__title">Express Apartment Interest</h3>
         <button class="modal__close" aria-label="Close modal">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M18 6L6 18M6 6l12 12"/>
