@@ -26,10 +26,11 @@
   <!-- Navigation -->
   <nav class="nav">
     <div class="nav__inner">
-      <a href="#" class="nav__logo">101 MONROE</a>
+      <a href="#" class="nav__logo"><span class="logo-101">101</span> <span class="logo-monroe">MONROE</span></a>
       
       <ul class="nav__links">
         <li><a href="#renderings" class="nav__link">Renderings</a></li>
+        <li><a href="#apartments" class="nav__link">Apartments</a></li>
         <li><a href="#photos" class="nav__link">Photos</a></li>
         <li><a href="#history" class="nav__link">History</a></li>
         <li><a href="#progress" class="nav__link">Progress</a></li>
@@ -49,7 +50,7 @@
   <div class="mobile-overlay"></div>
   <div class="mobile-menu">
     <div class="mobile-menu__header">
-      <span class="nav__logo">101 MONROE</span>
+      <span class="nav__logo"><span class="logo-101">101</span> <span class="logo-monroe">MONROE</span></span>
       <button class="mobile-menu__close" aria-label="Close menu">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M18 6L6 18M6 6l12 12"/>
@@ -57,6 +58,7 @@
       </button>
     </div>
     <a href="#renderings" class="mobile-menu__link">Renderings</a>
+    <a href="#apartments" class="mobile-menu__link">Apartments</a>
     <a href="#photos" class="mobile-menu__link">Photos</a>
     <a href="#history" class="mobile-menu__link">History</a>
     <a href="#progress" class="mobile-menu__link">Progress</a>
@@ -81,7 +83,7 @@
         <div class="hero__overlay"></div>
       </div>
       <div class="hero__content">
-        <h1>101 Monroe</h1>
+        <h1><span class="logo-101">101</span> <span class="logo-monroe">Monroe</span></h1>
         <p class="subhead">Boutique apartments in Downtown Brooklyn, Michigan</p>
         <p class="micro">Restoring a historic 1868 building into six new residences.</p>
         <div class="hero__buttons">
@@ -169,8 +171,153 @@
       </div>
     </section>
 
+    <!-- Apartments / Floor Plans Section -->
+    <section id="apartments" class="section section--alt">
+      <div class="container">
+        <p class="section-label">Available Units</p>
+        <h2>Apartment Floor Plans</h2>
+        <p class="mb-4">Six unique layouts ranging from cozy one-bedrooms to spacious two-bedroom homes. Click any floor plan to enlarge.</p>
+        
+        <!-- Unit Overview Grid -->
+        <div class="units-grid">
+          <!-- Apartment 1 -->
+          <div class="unit-card">
+            <div class="unit-card__image" data-lightbox="images/floorplans/apt1.png" data-caption="Apartment 1 — 1 Bed / 1 Bath / 734 SF">
+              <img src="images/floorplans/apt1.png" alt="Apartment 1 floor plan" loading="lazy">
+              <div class="unit-card__zoom">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                  <path d="M11 8v6M8 11h6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="unit-card__content">
+              <h3>Apartment 1</h3>
+              <div class="unit-card__details">
+                <span>1 Bed</span>
+                <span>1 Bath</span>
+                <span>734 SF</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Apartment 2 -->
+          <div class="unit-card">
+            <div class="unit-card__image" data-lightbox="images/floorplans/apt2.png" data-caption="Apartment 2 — 1 Bed / 1 Bath / 655 SF">
+              <img src="images/floorplans/apt2.png" alt="Apartment 2 floor plan" loading="lazy">
+              <div class="unit-card__zoom">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                  <path d="M11 8v6M8 11h6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="unit-card__content">
+              <h3>Apartment 2</h3>
+              <div class="unit-card__details">
+                <span>1 Bed</span>
+                <span>1 Bath</span>
+                <span>655 SF</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Apartment 3 -->
+          <div class="unit-card">
+            <div class="unit-card__image" data-lightbox="images/floorplans/apt3.png" data-caption="Apartment 3 — 2 Bed / 1 Bath / 898 SF">
+              <img src="images/floorplans/apt3.png" alt="Apartment 3 floor plan" loading="lazy">
+              <div class="unit-card__zoom">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                  <path d="M11 8v6M8 11h6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="unit-card__content">
+              <h3>Apartment 3</h3>
+              <div class="unit-card__details">
+                <span>2 Bed</span>
+                <span>1 Bath</span>
+                <span>898 SF</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Apartment 4 -->
+          <div class="unit-card">
+            <div class="unit-card__image" data-lightbox="images/floorplans/apt4.png" data-caption="Apartment 4 — 1 Bed / 1 Bath / 555 SF">
+              <img src="images/floorplans/apt4.png" alt="Apartment 4 floor plan" loading="lazy">
+              <div class="unit-card__zoom">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                  <path d="M11 8v6M8 11h6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="unit-card__content">
+              <h3>Apartment 4</h3>
+              <div class="unit-card__details">
+                <span>1 Bed</span>
+                <span>1 Bath</span>
+                <span>555 SF</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Apartment 5 -->
+          <div class="unit-card">
+            <div class="unit-card__image" data-lightbox="images/floorplans/apt5.png" data-caption="Apartment 5 — 2 Bed / 1 Bath / 884 SF">
+              <img src="images/floorplans/apt5.png" alt="Apartment 5 floor plan" loading="lazy">
+              <div class="unit-card__zoom">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                  <path d="M11 8v6M8 11h6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="unit-card__content">
+              <h3>Apartment 5</h3>
+              <div class="unit-card__details">
+                <span>2 Bed</span>
+                <span>1 Bath</span>
+                <span>884 SF</span>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Apartment 6 -->
+          <div class="unit-card">
+            <div class="unit-card__image" data-lightbox="images/floorplans/apt6.png" data-caption="Apartment 6 — 2 Bed / 2 Bath / 1,196 SF">
+              <img src="images/floorplans/apt6.png" alt="Apartment 6 floor plan" loading="lazy">
+              <div class="unit-card__zoom">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                  <path d="M11 8v6M8 11h6"/>
+                </svg>
+              </div>
+            </div>
+            <div class="unit-card__content">
+              <h3>Apartment 6</h3>
+              <div class="unit-card__details">
+                <span>2 Bed</span>
+                <span>2 Bath</span>
+                <span>1,196 SF</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <p class="floorplan-disclaimer">Floor plans are for layout reference only. Final dimensions and finishes subject to change.</p>
+        
+        <div class="cta-banner mt-4">
+          <p>Find a layout you like? <span>Get notified when leasing opens.</span></p>
+          <button class="btn btn--primary btn--small" data-modal="interest-form">Join Interest List</button>
+        </div>
+      </div>
+    </section>
+
     <!-- Building Photos -->
-    <section id="photos" class="section section--alt">
+    <section id="photos" class="section">
       <div class="container">
         <p class="section-label">Existing Conditions</p>
         <h2>The Building Today</h2>
@@ -215,7 +362,7 @@
     </section>
 
     <!-- History Section -->
-    <section id="history" class="section">
+    <section id="history" class="section section--alt">
       <div class="container">
         <div class="history">
           <div class="history__image">
@@ -259,7 +406,7 @@
     </section>
 
     <!-- Construction Progress -->
-    <section id="progress" class="section section--alt">
+    <section id="progress" class="section">
       <div class="container">
         <p class="section-label">Construction</p>
         <h2>Progress Updates</h2>
@@ -291,11 +438,17 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section section--alt">
       <div class="container">
         <div class="about">
-          <div class="about__image">
-            <img src="images/bea.jpg" alt="Beatrice Nestor">
+          <div class="about__images">
+            <div class="about__image">
+              <img src="images/bea.jpg" alt="Beatrice Nestor">
+            </div>
+            <div class="about__image about__image--family">
+              <img src="images/family.jpg" alt="Bea Nestor with her family in Michigan">
+              <p class="about__image-caption">Bea Nestor with her family</p>
+            </div>
           </div>
           <div class="about__content">
             <p class="section-label">Developer</p>
@@ -352,7 +505,7 @@
               FORMSPREE SETUP:
               1. Go to formspree.io and create a free account
               2. Create a new form
-              3. Replace "mregwkor" below with your form ID
+              3. Replace "YOUR_FORM_ID" below with your form ID
               =====================================================
             -->
             <form action="https://formspree.io/f/mregwkor" method="POST" data-formspree>
@@ -490,7 +643,7 @@
     <div class="container">
       <div class="footer__content">
         <div>
-          <div class="footer__brand">101 MONROE</div>
+          <div class="footer__brand"><span class="logo-101">101</span> <span class="logo-monroe">MONROE</span></div>
           <p class="footer__location">Brooklyn, Michigan</p>
         </div>
         <div class="footer__contact">
