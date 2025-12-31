@@ -427,25 +427,48 @@ h1 .logo-monroe {
 
 .hero__content h1 {
   color: var(--white);
-  margin-bottom: 1rem;
+  margin-bottom: 0.25rem;
   text-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hero__title {
+  font-size: clamp(3rem, 8vw, 5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.hero__location {
+  font-family: var(--font-heading);
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 1.25rem;
+  letter-spacing: 0.02em;
+}
+
+.hero__descriptor {
+  font-family: var(--font-body);
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0.75rem;
+  letter-spacing: 0.01em;
 }
 
 .hero__content .subhead {
   color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0.75rem;
-  font-size: 1.375rem;
+  margin-bottom: 2rem;
+  font-size: 1.125rem;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
 }
 
-.hero__content .micro {
-  color: rgba(255, 255, 255, 0.8);
-  margin-bottom: 2.5rem;
-  max-width: 480px;
-  margin-left: auto;
-  margin-right: auto;
+.hero__helper {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 1rem;
+  margin-bottom: 0;
 }
 
 .hero__buttons {
@@ -791,7 +814,13 @@ h1 .logo-monroe {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
-  align-items: center;
+  align-items: start;
+}
+
+.history__images {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
 
 .history__image {
@@ -847,8 +876,14 @@ h1 .logo-monroe {
     gap: 2rem;
   }
   
-  .history__image {
+  .history__images {
     order: -1;
+    flex-direction: row;
+    overflow-x: auto;
+  }
+  
+  .history__image {
+    flex: 0 0 280px;
   }
 }
 
@@ -1522,6 +1557,41 @@ h1 .logo-monroe {
   max-width: 650px;
   margin: 0 auto 2rem;
   color: var(--charcoal-light);
+}
+
+/* ---------- Why Brooklyn Layout ---------- */
+.why-brooklyn-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.why-brooklyn-layout .content-block {
+  max-width: none;
+}
+
+.why-brooklyn-image {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-md);
+}
+
+.why-brooklyn-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 900px) {
+  .why-brooklyn-layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .why-brooklyn-image {
+    order: -1;
+    max-width: 500px;
+  }
 }
 
 /* ---------- Content Block ---------- */
