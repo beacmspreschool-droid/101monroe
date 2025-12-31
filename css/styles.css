@@ -435,13 +435,15 @@ h1 .logo-monroe {
   color: rgba(255, 255, 255, 0.9);
   margin-bottom: 0.75rem;
   font-size: 1.375rem;
-  max-width: none;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero__content .micro {
   color: rgba(255, 255, 255, 0.8);
   margin-bottom: 2.5rem;
-  max-width: none;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1505,6 +1507,189 @@ h1 .logo-monroe {
 .mb-5 { margin-bottom: 3rem; }
 .mt-4 { margin-top: 2rem; }
 .mt-5 { margin-top: 3rem; }
+
+/* ---------- Teaser Block ---------- */
+.teaser-block {
+  padding: clamp(3rem, 6vw, 4rem) 0;
+  background-color: var(--white);
+}
+
+.teaser-block h2 {
+  margin-bottom: 1rem;
+}
+
+.teaser-block__copy {
+  max-width: 650px;
+  margin: 0 auto 2rem;
+  color: var(--charcoal-light);
+}
+
+/* ---------- Content Block ---------- */
+.content-block {
+  max-width: 750px;
+}
+
+.content-block p {
+  color: var(--charcoal-light);
+  margin-bottom: 1.25rem;
+}
+
+.lead-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--charcoal) !important;
+  line-height: 1.5;
+}
+
+/* ---------- Simple List (with dashes) ---------- */
+.simple-list {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding: 0;
+}
+
+.simple-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--charcoal-light);
+}
+
+.simple-list li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--hemlock);
+  font-weight: 600;
+}
+
+/* ---------- Amenities List ---------- */
+.amenities-list {
+  list-style: none;
+  margin: 1.25rem 0;
+  padding: 0;
+  max-width: 600px;
+}
+
+.amenities-list li {
+  position: relative;
+  padding-left: 1.75rem;
+  margin-bottom: 0.75rem;
+  color: var(--charcoal-light);
+}
+
+.amenities-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 8px;
+  height: 8px;
+  background-color: var(--hemlock);
+  border-radius: 50%;
+}
+
+/* ---------- Helpful Links ---------- */
+.helpful-links {
+  background-color: var(--plaster);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+}
+
+.helpful-links p {
+  margin-bottom: 1rem;
+}
+
+.link-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link-list li {
+  margin-bottom: 0.75rem;
+}
+
+.link-list a {
+  color: var(--hemlock);
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.link-list a:hover {
+  color: var(--hemlock-dark);
+}
+
+/* ---------- Drive Times ---------- */
+.drive-times {
+  background-color: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  max-width: 500px;
+}
+
+.drive-times h3 {
+  margin-bottom: 1.25rem;
+}
+
+.drive-times__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem 0;
+}
+
+.drive-times__list li {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--plaster-dark);
+  font-size: 1.0625rem;
+}
+
+.drive-times__list li:last-child {
+  border-bottom: none;
+}
+
+.drive-times__list strong {
+  color: var(--charcoal);
+}
+
+.drive-times__note {
+  font-size: 0.9375rem;
+  color: var(--charcoal-light);
+  margin-bottom: 0;
+}
+
+/* ---------- Commute Maps ---------- */
+.commute-maps h3 {
+  margin-bottom: 1.5rem;
+}
+
+.commute-maps__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.commute-map {
+  background-color: var(--white);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-sm);
+}
+
+.commute-map img {
+  width: 100%;
+  height: auto;
+}
+
+.commute-map__caption {
+  padding: 1rem 1.25rem;
+  font-size: 0.9375rem;
+  color: var(--charcoal-light);
+  text-align: center;
+  margin: 0;
+  background-color: var(--plaster);
+}
 
 /* ---------- Animations ---------- */
 @keyframes fadeInUp {

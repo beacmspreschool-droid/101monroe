@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>101 Monroe | Boutique Apartments in Brooklyn, Michigan</title>
-  <meta name="description" content="Six boutique apartments and local businesses in a beautifully restored 1868 building in downtown Brooklyn, Michigan. Express interest for Summer 2026 availability.">
+  <meta name="description" content="Six boutique apartments and local businesses in a beautifully restored 1868 building in downtown Brooklyn, Michigan. Join the priority leasing list for Summer 2026 availability.">
   
   <!-- Open Graph -->
   <meta property="og:title" content="101 Monroe | Boutique Apartments in Brooklyn, Michigan">
@@ -29,14 +29,15 @@
       <a href="#" class="nav__logo"><span class="logo-101">101</span> <span class="logo-monroe">MONROE</span></a>
       
       <ul class="nav__links">
-        <li><a href="#renderings" class="nav__link">Renderings</a></li>
         <li><a href="#apartments" class="nav__link">Apartments</a></li>
         <li><a href="#commercial" class="nav__link">Commercial</a></li>
+        <li><a href="#why-brooklyn" class="nav__link">Why Brooklyn</a></li>
+        <li><a href="#commute" class="nav__link">Commute</a></li>
         <li><a href="#photos" class="nav__link">Photos</a></li>
         <li><a href="#history" class="nav__link">History</a></li>
         <li><a href="#progress" class="nav__link">Progress</a></li>
         <li><a href="#about" class="nav__link">About</a></li>
-        <li><a href="#interest-form" class="nav__cta" data-modal="interest-form">Express Apartment Interest</a></li>
+        <li><a href="#interest-form" class="nav__cta" data-modal="interest-form">Join the Priority Leasing List</a></li>
       </ul>
       
       <button class="nav__mobile-toggle" aria-label="Open menu">
@@ -58,14 +59,15 @@
         </svg>
       </button>
     </div>
-    <a href="#renderings" class="mobile-menu__link">Renderings</a>
     <a href="#apartments" class="mobile-menu__link">Apartments</a>
     <a href="#commercial" class="mobile-menu__link">Commercial</a>
+    <a href="#why-brooklyn" class="mobile-menu__link">Why Brooklyn</a>
+    <a href="#commute" class="mobile-menu__link">Commute</a>
     <a href="#photos" class="mobile-menu__link">Photos</a>
     <a href="#history" class="mobile-menu__link">History</a>
     <a href="#progress" class="mobile-menu__link">Progress</a>
     <a href="#about" class="mobile-menu__link">About</a>
-    <a href="#interest-form" class="mobile-menu__cta" data-modal="interest-form">Express Apartment Interest</a>
+    <a href="#interest-form" class="mobile-menu__cta" data-modal="interest-form">Join the Priority Leasing List</a>
   </div>
 
   <!-- Floating CTA -->
@@ -74,7 +76,7 @@
       <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
       <path d="M22 6l-10 7L2 6"/>
     </svg>
-    Express Apartment Interest
+    Join the Priority Leasing List
   </button>
 
   <main>
@@ -85,22 +87,32 @@
         <div class="hero__overlay"></div>
       </div>
       <div class="hero__content">
-        <h1><span class="logo-101">101</span> <span class="logo-monroe">Monroe</span></h1>
-        <p class="subhead">Boutique apartments and local businesses in the heart of Downtown Brooklyn, Michigan</p>
-        <p class="micro">Restoring a historic 1868 building into six thoughtfully designed residences, with ground-floor space for new local businesses.</p>
+        <h1>Historic Downtown Living, Well Connected</h1>
+        <p class="subhead">Walkable small-town living with straightforward access to Jackson, Chelsea, and Ann Arbor.</p>
         <div class="hero__buttons">
-          <a href="#interest-form" class="btn btn--primary" data-modal="interest-form">Express Apartment Interest</a>
-          <a href="#renderings" class="btn btn--outline">View Apartment Renderings</a>
+          <a href="#interest-form" class="btn btn--primary" data-modal="interest-form">Join the Priority Leasing List</a>
+          <a href="#apartments" class="btn btn--outline">View Apartment Renderings</a>
         </div>
       </div>
     </section>
 
-    <!-- Apartment Renderings Gallery -->
-    <section id="renderings" class="section">
+    <!-- Homepage Teaser Block -->
+    <section class="section teaser-block">
+      <div class="container text-center">
+        <h2>Historic Downtown Living — Just Outside Ann Arbor</h2>
+        <p class="teaser-block__copy">Walkable small-town living with easy access to Jackson, Chelsea, and Ann Arbor. Designed for people who want more space, more comfort, and a better daily rhythm.</p>
+        <a href="#why-brooklyn" class="btn btn--outline-dark">Why Brooklyn & the Commute →</a>
+      </div>
+    </section>
+
+    <!-- Apartments Section (Combined: Renderings + Floor Plans + Amenities) -->
+    <section id="apartments" class="section section--alt">
       <div class="container">
         <p class="section-label">What's Coming</p>
-        <h2>Apartment Renderings</h2>
+        <h2>Apartments</h2>
         
+        <!-- Renderings Gallery -->
+        <h3 class="mb-3">Apartment Renderings</h3>
         <div class="gallery__filters">
           <button class="gallery__filter active" data-filter="all">All</button>
           <button class="gallery__filter" data-filter="kitchen">Kitchen</button>
@@ -110,7 +122,6 @@
         </div>
         
         <div class="gallery__grid">
-          <!-- Item 1 -->
           <div class="gallery__item" data-category="living" data-lightbox="images/renderings/living-kitchen.png" data-caption="Open-concept living and kitchen">
             <img src="images/renderings/living-kitchen.png" alt="Open-concept living and kitchen" loading="lazy">
             <div class="gallery__item-overlay">
@@ -118,7 +129,6 @@
             </div>
           </div>
           
-          <!-- Item 2 -->
           <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-3.png" data-caption="Kitchen with island and arched windows">
             <img src="images/renderings/kitchen-3.png" alt="Kitchen with island and arched windows" loading="lazy">
             <div class="gallery__item-overlay">
@@ -126,7 +136,6 @@
             </div>
           </div>
           
-          <!-- Item 3 -->
           <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-1.png" data-caption="Modern kitchen with natural light">
             <img src="images/renderings/kitchen-1.png" alt="Modern kitchen with natural light" loading="lazy">
             <div class="gallery__item-overlay">
@@ -134,7 +143,6 @@
             </div>
           </div>
           
-          <!-- Item 4 -->
           <div class="gallery__item" data-category="bedroom" data-lightbox="images/renderings/bedroom.png" data-caption="Bedroom with arched window">
             <img src="images/renderings/bedroom.png" alt="Bedroom with arched window" loading="lazy">
             <div class="gallery__item-overlay">
@@ -142,14 +150,6 @@
             </div>
           </div>
           
-          <!-- Mid-Gallery CTA Card -->
-          <div class="gallery__cta-card">
-            <h3>Interested?</h3>
-            <p>Be first to know when floor plans and pricing are released.</p>
-            <button class="btn" data-modal="interest-form">Express Apartment Interest</button>
-          </div>
-          
-          <!-- Item 5 -->
           <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-2.png" data-caption="Kitchen layout option">
             <img src="images/renderings/kitchen-2.png" alt="Kitchen layout option" loading="lazy">
             <div class="gallery__item-overlay">
@@ -157,7 +157,6 @@
             </div>
           </div>
           
-          <!-- Item 6 - NEW -->
           <div class="gallery__item" data-category="kitchen" data-lightbox="images/renderings/kitchen-4.png" data-caption="Kitchen with arched windows and pendant lights">
             <img src="images/renderings/kitchen-4.png" alt="Kitchen with arched windows and pendant lights" loading="lazy">
             <div class="gallery__item-overlay">
@@ -165,7 +164,6 @@
             </div>
           </div>
           
-          <!-- Item 7 -->
           <div class="gallery__item" data-category="bathroom" data-lightbox="images/renderings/bathroom.png" data-caption="Modern bathroom with classic details">
             <img src="images/renderings/bathroom.png" alt="Modern bathroom with classic details" loading="lazy">
             <div class="gallery__item-overlay">
@@ -173,24 +171,12 @@
             </div>
           </div>
         </div>
-        
-        <div class="gallery__footer">
-          <p>Interested in this layout? <span>Expected availability: Summer 2026</span></p>
-          <button class="btn btn--primary btn--small" data-modal="interest-form">Express Apartment Interest</button>
-        </div>
-      </div>
-    </section>
 
-    <!-- Apartments / Floor Plans Section -->
-    <section id="apartments" class="section section--alt">
-      <div class="container">
-        <p class="section-label">Available Units</p>
-        <h2>Apartment Floor Plans</h2>
+        <!-- Floor Plans -->
+        <h3 class="mt-5 mb-3">Floor Plans</h3>
         <p class="mb-4">Six unique layouts ranging from cozy one-bedrooms to spacious two-bedroom homes. Click any floor plan to enlarge.</p>
         
-        <!-- Unit Overview Grid -->
         <div class="units-grid">
-          <!-- Apartment 1 -->
           <div class="unit-card">
             <div class="unit-card__image" data-lightbox="images/floorplans/apt1.png" data-caption="Apartment 1 — 1 Bed / 1 Bath / 734 SF">
               <img src="images/floorplans/apt1.png" alt="Apartment 1 floor plan" loading="lazy">
@@ -211,7 +197,6 @@
             </div>
           </div>
           
-          <!-- Apartment 2 -->
           <div class="unit-card">
             <div class="unit-card__image" data-lightbox="images/floorplans/apt2.png" data-caption="Apartment 2 — 1 Bed / 1 Bath / 655 SF">
               <img src="images/floorplans/apt2.png" alt="Apartment 2 floor plan" loading="lazy">
@@ -232,7 +217,6 @@
             </div>
           </div>
           
-          <!-- Apartment 3 -->
           <div class="unit-card">
             <div class="unit-card__image" data-lightbox="images/floorplans/apt3.png" data-caption="Apartment 3 — 2 Bed / 1 Bath / 898 SF">
               <img src="images/floorplans/apt3.png" alt="Apartment 3 floor plan" loading="lazy">
@@ -253,7 +237,6 @@
             </div>
           </div>
           
-          <!-- Apartment 4 -->
           <div class="unit-card">
             <div class="unit-card__image" data-lightbox="images/floorplans/apt4.png" data-caption="Apartment 4 — 1 Bed / 1 Bath / 555 SF">
               <img src="images/floorplans/apt4.png" alt="Apartment 4 floor plan" loading="lazy">
@@ -274,7 +257,6 @@
             </div>
           </div>
           
-          <!-- Apartment 5 -->
           <div class="unit-card">
             <div class="unit-card__image" data-lightbox="images/floorplans/apt5.png" data-caption="Apartment 5 — 2 Bed / 1 Bath / 884 SF">
               <img src="images/floorplans/apt5.png" alt="Apartment 5 floor plan" loading="lazy">
@@ -295,7 +277,6 @@
             </div>
           </div>
           
-          <!-- Apartment 6 -->
           <div class="unit-card">
             <div class="unit-card__image" data-lightbox="images/floorplans/apt6.png" data-caption="Apartment 6 — 2 Bed / 2 Bath / 1,196 SF">
               <img src="images/floorplans/apt6.png" alt="Apartment 6 floor plan" loading="lazy">
@@ -318,10 +299,21 @@
         </div>
         
         <p class="floorplan-disclaimer">Floor plans are for layout reference only. Final dimensions and finishes subject to change.</p>
+
+        <!-- Amenities -->
+        <h3 class="mt-5 mb-3">Apartment Amenities</h3>
+        <p>All apartments at 101 Monroe are fully renovated and brand new.</p>
+        <ul class="amenities-list">
+          <li>In-unit washer and dryer</li>
+          <li>Brand new appliances throughout</li>
+          <li>New kitchens and bathrooms</li>
+          <li>Modern systems and finishes</li>
+          <li>Thoughtfully restored historic building with updated interiors</li>
+        </ul>
         
-        <div class="cta-banner mt-4">
-          <p>Find a layout you like? <span>Get notified when leasing opens.</span></p>
-          <button class="btn btn--primary btn--small" data-modal="interest-form">Express Apartment Interest</button>
+        <div class="cta-banner mt-5">
+          <p>Find a layout you like? <span>Expected availability: Summer 2026</span></p>
+          <button class="btn btn--primary btn--small" data-modal="interest-form">Join the Priority Leasing List</button>
         </div>
       </div>
     </section>
@@ -334,7 +326,6 @@
         <p class="mb-5">At 101 Monroe, we're proud to welcome small-business owners bringing fresh energy, great food, and thoughtful retail to the heart of Brooklyn.</p>
         
         <div class="tenants-grid">
-          <!-- Fetch Market & Deli -->
           <div class="tenant-card tenant-card--featured">
             <div class="tenant-card__logo">
               <img src="images/fetch-logo.png" alt="Fetch Market & Deli logo">
@@ -353,7 +344,6 @@
             </div>
           </div>
           
-          <!-- More Coming -->
           <div class="tenant-card tenant-card--placeholder">
             <div class="tenant-card__content">
               <h3>More local businesses coming</h3>
@@ -362,6 +352,108 @@
               </p>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Brooklyn Section -->
+    <section id="why-brooklyn" class="section section--alt">
+      <div class="container">
+        <p class="section-label">Location</p>
+        <h2>Why Brooklyn</h2>
+        
+        <div class="content-block">
+          <p class="lead-text">Brooklyn, Michigan is one of those places locals have long appreciated — and more people are now beginning to discover.</p>
+          
+          <p>It's a walkable small town with a real downtown, surrounded by lakes and anchored by local businesses people rely on day to day. You can grab coffee, meet friends for dinner, pick up groceries, or browse a bookstore without getting in your car.</p>
+          
+          <p>What draws people here is simple:</p>
+          
+          <ul class="simple-list">
+            <li>It's more affordable than nearby cities</li>
+            <li>Apartments offer more space for the money</li>
+            <li>Downtown is easy to walk and feels active, not empty</li>
+            <li>It's friendly and familiar, even if you're new</li>
+          </ul>
+          
+          <p>For many, Brooklyn offers something that's become harder to find elsewhere — a place that feels livable, not competitive.</p>
+        </div>
+        
+        <div class="helpful-links mt-5">
+          <p><strong>Want to explore more of what's here?</strong></p>
+          <ul class="link-list">
+            <li><a href="https://www.villageofbrooklyn.com/interactivemap.html">Explore downtown Brooklyn businesses →</a></li>
+            <li><a href="https://www.irishhills.com/things-to-do/">Things to do in the Irish Hills →</a></li>
+          </ul>
+        </div>
+        
+        <div class="cta-banner mt-5">
+          <p>Ready to make Brooklyn home?</p>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join the Priority Leasing List</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Commute & Connectivity Section -->
+    <section id="commute" class="section">
+      <div class="container">
+        <p class="section-label">Getting Around</p>
+        <h2>Commute & Connectivity</h2>
+        
+        <div class="content-block">
+          <p class="lead-text">Living in Brooklyn doesn't mean disconnecting from where you work — it means being more intentional about where you live.</p>
+          
+          <p>With direct routes and predictable drive times, Brooklyn works well for people commuting a few days a week who want more space, comfort, and calm at home.</p>
+        </div>
+        
+        <div class="drive-times mt-5">
+          <h3>Typical Drive Times</h3>
+          <ul class="drive-times__list">
+            <li><strong>Jackson:</strong> ~20 minutes</li>
+            <li><strong>Chelsea:</strong> ~30 minutes</li>
+            <li><strong>Ann Arbor:</strong> ~45 minutes</li>
+          </ul>
+          <p class="drive-times__note">Routes are straightforward via M-50, US-127, and I-94. Drive times are predictable and often feel simpler than navigating daily city traffic.</p>
+        </div>
+        
+        <div class="commute-maps mt-5">
+          <h3>Visual Commute Examples</h3>
+          <div class="commute-maps__grid">
+            <div class="commute-map">
+              <img src="images/commute/brooklyn-to-jackson.png" alt="Map showing route from Brooklyn to Jackson" loading="lazy">
+              <p class="commute-map__caption">Typical drive from downtown Brooklyn to Jackson</p>
+            </div>
+            <div class="commute-map">
+              <img src="images/commute/brooklyn-to-chelsea.png" alt="Map showing route from Brooklyn to Chelsea" loading="lazy">
+              <p class="commute-map__caption">Typical drive from downtown Brooklyn to Chelsea</p>
+            </div>
+            <div class="commute-map">
+              <img src="images/commute/brooklyn-to-ann-arbor.png" alt="Map showing route from Brooklyn to Ann Arbor" loading="lazy">
+              <p class="commute-map__caption">Typical drive from downtown Brooklyn to Ann Arbor</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="content-block mt-5">
+          <h3>A Good Fit for Hybrid Work</h3>
+          <p>Brooklyn is especially well-suited for people with hybrid or flexible work schedules.</p>
+          <p>Instead of paying city prices to live close five days a week, many residents choose a place that feels more comfortable day to day — and commute when it actually matters. For some, the drive becomes a welcome transition: a clear boundary between work and home.</p>
+        </div>
+        
+        <div class="content-block mt-5">
+          <p><strong>Choosing Brooklyn means:</strong></p>
+          <ul class="simple-list">
+            <li>More space at home</li>
+            <li>Lower day-to-day costs</li>
+            <li>A walkable downtown instead of daily congestion</li>
+            <li>Easy regional access without living in traffic</li>
+          </ul>
+          <p>You stay connected to Jackson, Chelsea, and Ann Arbor — while coming home to a place that feels grounded and comfortable.</p>
+        </div>
+        
+        <div class="cta-banner mt-5">
+          <p>Want to learn more about living here?</p>
+          <button class="btn btn--primary btn--small" data-modal="interest-form">Join the Priority Leasing List</button>
         </div>
       </div>
     </section>
@@ -406,7 +498,7 @@
         
         <div class="cta-banner mt-4">
           <p>Want updates + leasing info?</p>
-          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Express Apartment Interest</button>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join the Priority Leasing List</button>
         </div>
       </div>
     </section>
@@ -450,7 +542,7 @@
         
         <div class="cta-banner mt-5">
           <p>Be first to hear about floor plans + pricing.</p>
-          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Express Apartment Interest</button>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join the Priority Leasing List</button>
         </div>
       </div>
     </section>
@@ -524,7 +616,7 @@
         
         <div class="cta-banner mt-5">
           <p>Questions? Want to connect?</p>
-          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Express Apartment Interest</button>
+          <button class="btn btn--outline-dark btn--small" data-modal="interest-form">Join the Priority Leasing List</button>
         </div>
       </div>
     </section>
@@ -534,12 +626,11 @@
       <div class="container">
         <div class="form-section">
           <div class="form-section__header">
-            <h2>Express Apartment Interest</h2>
+            <h2>Join the Priority Leasing List</h2>
             <p>Be first to know when floor plans and pricing are released. We'll also send occasional construction updates.</p>
           </div>
           
           <div class="form">
-            <!-- SUCCESS MESSAGE -->
             <div class="form__success">
               <div class="form__success-icon">
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -553,7 +644,6 @@
             <form action="https://formspree.io/f/mregwkor" method="POST" data-formspree>
               <input type="hidden" name="_subject" value="New 101 Monroe Interest Form Submission">
               
-              <!-- Contact Info -->
               <div class="form__section">
                 <div class="form__section-title">Contact Information</div>
                 <div class="form__row">
@@ -574,7 +664,6 @@
                 </div>
               </div>
               
-              <!-- Apartment Needs -->
               <div class="form__section">
                 <div class="form__section-title">Apartment Preferences</div>
                 <div class="form__row">
@@ -625,7 +714,6 @@
                 </div>
               </div>
               
-              <!-- Pets & Parking -->
               <div class="form__section">
                 <div class="form__section-title">Pets & Parking</div>
                 <div class="form__row">
@@ -662,7 +750,6 @@
                 </div>
               </div>
               
-              <!-- Additional Notes -->
               <div class="form__section">
                 <div class="form__section-title">Anything Else?</div>
                 <div class="form__group">
@@ -704,7 +791,7 @@
     <div class="modal__overlay"></div>
     <div class="modal__container">
       <div class="modal__header">
-        <h3 class="modal__title">Express Apartment Interest</h3>
+        <h3 class="modal__title">Join the Priority Leasing List</h3>
         <button class="modal__close" aria-label="Close modal">
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M18 6L6 18M6 6l12 12"/>
@@ -713,7 +800,6 @@
       </div>
       <div class="modal__body">
         <div class="form">
-          <!-- SUCCESS MESSAGE -->
           <div class="form__success">
             <div class="form__success-icon">
               <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -727,7 +813,6 @@
           <form action="https://formspree.io/f/mregwkor" method="POST" data-formspree>
             <input type="hidden" name="_subject" value="New 101 Monroe Interest Form Submission (Modal)">
             
-            <!-- Contact Info -->
             <div class="form__section">
               <div class="form__section-title">Contact Information</div>
               <div class="form__row">
@@ -748,7 +833,6 @@
               </div>
             </div>
             
-            <!-- Apartment Needs -->
             <div class="form__section">
               <div class="form__section-title">Apartment Preferences</div>
               <div class="form__row">
@@ -799,7 +883,6 @@
               </div>
             </div>
             
-            <!-- Pets & Parking -->
             <div class="form__section">
               <div class="form__section-title">Pets & Parking</div>
               <div class="form__row">
@@ -825,7 +908,6 @@
               </div>
             </div>
             
-            <!-- Additional Notes -->
             <div class="form__section">
               <div class="form__section-title">Anything Else?</div>
               <div class="form__group">
