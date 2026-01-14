@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const mobileMenu = document.querySelector('.mobile-menu');
   const mobileOverlay = document.querySelector('.mobile-overlay');
   const mobileClose = document.querySelector('.mobile-menu__close');
-  const mobileLinks = document.querySelectorAll('.mobile-menu__link');
+  const mobileLinks = document.querySelectorAll('.mobile-menu__link, .mobile-menu__cta');
   
   function openMobileMenu() {
     mobileMenu.classList.add('is-open');
@@ -57,23 +57,32 @@ document.addEventListener('DOMContentLoaded', function() {
   const modal = document.querySelector('.modal');
   const modalOverlay = document.querySelector('.modal__overlay');
   const modalClose = document.querySelector('.modal__close');
-  const modalTriggers = document.querySelectorAll('[data-modal="interest-form"]');
   
   function openModal() {
-    modal.classList.add('is-open');
-    document.body.style.overflow = 'hidden';
+    if (modal) {
+      modal.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
   }
   
   function closeModal() {
-    modal.classList.remove('is-open');
-    document.body.style.overflow = '';
+    if (modal) {
+      modal.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
   }
   
-  modalTriggers.forEach(trigger => {
-    trigger.addEventListener('click', function(e) {
+  // Use event delegation on document for better mobile support
+  document.addEventListener('click', function(e) {
+    const trigger = e.target.closest('[data-modal="interest-form"]');
+    if (trigger) {
       e.preventDefault();
-      openModal();
-    });
+      e.stopPropagation();
+      // Close mobile menu first if open
+      closeMobileMenu();
+      // Small delay to ensure mobile menu closes first
+      setTimeout(openModal, 50);
+    }
   });
   
   if (modalClose) {
