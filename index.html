@@ -104,8 +104,64 @@
         <p class="section-label">What's Coming</p>
         <h2>Apartments</h2>
         
-        <!-- Renderings Gallery -->
-        <h3 class="mb-3">Apartment Renderings</h3>
+        <!-- 3D Apartment Showcase -->
+        <div class="showcase">
+          <div class="showcase__preview" data-lightbox="images/3d/apt6.png" data-caption="Apartment 6 — 3D View — 2 Bed / 2 Bath / 1,196 SF">
+            <img class="showcase__image" src="images/3d/apt6.webp" alt="Apartment 6 furnished 3D floor plan">
+            <div class="showcase__info">
+              <span class="showcase__badge showcase__badge--flagship">Flagship Unit</span>
+              <h3 class="showcase__name">Apartment 6</h3>
+              <p class="showcase__details">2 Bed &bull; 2 Bath &bull; 1,196 SF</p>
+            </div>
+          </div>
+          <div class="showcase__thumbs">
+            <button class="showcase__thumb is-active"
+                    data-apt="6" data-img="images/3d/apt6.webp" data-full="images/3d/apt6.png"
+                    data-name="Apartment 6" data-specs="2 Bed &bull; 2 Bath &bull; 1,196 SF"
+                    data-badge="Flagship Unit" data-badge-type="flagship">
+              <img src="images/3d/apt6.webp" alt="Apartment 6 thumbnail">
+              <span class="showcase__thumb-label">Apt 6</span>
+            </button>
+            <button class="showcase__thumb"
+                    data-apt="2" data-img="images/3d/apt2.webp" data-full="images/3d/apt2.png"
+                    data-name="Apartment 2" data-specs="1 Bed &bull; 1 Bath &bull; 655 SF"
+                    data-badge="Featured" data-badge-type="featured">
+              <img src="images/3d/apt2.webp" alt="Apartment 2 thumbnail">
+              <span class="showcase__thumb-label">Apt 2</span>
+            </button>
+            <button class="showcase__thumb"
+                    data-apt="1" data-img="images/3d/apt1.webp" data-full="images/3d/apt1.png"
+                    data-name="Apartment 1" data-specs="1 Bed &bull; 1 Bath &bull; 734 SF"
+                    data-badge="" data-badge-type="">
+              <img src="images/3d/apt1.webp" alt="Apartment 1 thumbnail">
+              <span class="showcase__thumb-label">Apt 1</span>
+            </button>
+            <button class="showcase__thumb"
+                    data-apt="3" data-img="images/3d/apt3.webp" data-full="images/3d/apt3.png"
+                    data-name="Apartment 3" data-specs="2 Bed &bull; 1 Bath &bull; 898 SF"
+                    data-badge="" data-badge-type="">
+              <img src="images/3d/apt3.webp" alt="Apartment 3 thumbnail">
+              <span class="showcase__thumb-label">Apt 3</span>
+            </button>
+            <button class="showcase__thumb"
+                    data-apt="4" data-img="images/3d/apt4.webp" data-full="images/3d/apt4.png"
+                    data-name="Apartment 4" data-specs="1 Bed &bull; 1 Bath &bull; 555 SF"
+                    data-badge="" data-badge-type="">
+              <img src="images/3d/apt4.webp" alt="Apartment 4 thumbnail">
+              <span class="showcase__thumb-label">Apt 4</span>
+            </button>
+            <button class="showcase__thumb"
+                    data-apt="5" data-img="images/3d/apt5.webp" data-full="images/3d/apt5.png"
+                    data-name="Apartment 5" data-specs="2 Bed &bull; 1 Bath &bull; 884 SF"
+                    data-badge="" data-badge-type="">
+              <img src="images/3d/apt5.webp" alt="Apartment 5 thumbnail">
+              <span class="showcase__thumb-label">Apt 5</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Interior Renderings Gallery -->
+        <h3 class="mt-5 mb-3">Interior Renderings</h3>
         <div class="gallery__filters">
           <button class="gallery__filter active" data-filter="all">All</button>
           <button class="gallery__filter" data-filter="kitchen">Kitchen</button>
@@ -292,132 +348,6 @@
         </div>
         
         <p class="floorplan-disclaimer">Floor plans are for layout reference only. Final dimensions and finishes subject to change.</p>
-
-        <!-- 3D Floor Plans -->
-        <h3 class="mt-5 mb-3">3D Floor Plans</h3>
-        <p class="mb-4">See each apartment brought to life with furnished 3D views. Click any image to enlarge.</p>
-
-        <div class="units-grid">
-          <div class="unit-card">
-            <div class="unit-card__image" data-lightbox="images/3d/apt1.png" data-caption="Apartment 1 — 3D View — 1 Bed / 1 Bath / 734 SF">
-              <img src="images/3d/apt1.webp" alt="Apartment 1 furnished 3D floor plan" loading="lazy">
-              <div class="unit-card__zoom">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-                  <path d="M11 8v6M8 11h6"/>
-                </svg>
-              </div>
-            </div>
-            <div class="unit-card__content">
-              <h3>Apartment 1</h3>
-              <div class="unit-card__details">
-                <span>1 Bed</span>
-                <span>1 Bath</span>
-                <span>734 SF</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="unit-card">
-            <div class="unit-card__image" data-lightbox="images/3d/apt2.png" data-caption="Apartment 2 — 3D View — 1 Bed / 1 Bath / 655 SF">
-              <img src="images/3d/apt2.webp" alt="Apartment 2 furnished 3D floor plan" loading="lazy">
-              <div class="unit-card__zoom">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-                  <path d="M11 8v6M8 11h6"/>
-                </svg>
-              </div>
-            </div>
-            <div class="unit-card__content">
-              <h3>Apartment 2</h3>
-              <div class="unit-card__details">
-                <span>1 Bed</span>
-                <span>1 Bath</span>
-                <span>655 SF</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="unit-card">
-            <div class="unit-card__image" data-lightbox="images/3d/apt3.png" data-caption="Apartment 3 — 3D View — 2 Bed / 1 Bath / 898 SF">
-              <img src="images/3d/apt3.webp" alt="Apartment 3 furnished 3D floor plan" loading="lazy">
-              <div class="unit-card__zoom">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-                  <path d="M11 8v6M8 11h6"/>
-                </svg>
-              </div>
-            </div>
-            <div class="unit-card__content">
-              <h3>Apartment 3</h3>
-              <div class="unit-card__details">
-                <span>2 Bed</span>
-                <span>1 Bath</span>
-                <span>898 SF</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="unit-card">
-            <div class="unit-card__image" data-lightbox="images/3d/apt4.png" data-caption="Apartment 4 — 3D View — 1 Bed / 1 Bath / 555 SF">
-              <img src="images/3d/apt4.webp" alt="Apartment 4 furnished 3D floor plan" loading="lazy">
-              <div class="unit-card__zoom">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-                  <path d="M11 8v6M8 11h6"/>
-                </svg>
-              </div>
-            </div>
-            <div class="unit-card__content">
-              <h3>Apartment 4</h3>
-              <div class="unit-card__details">
-                <span>1 Bed</span>
-                <span>1 Bath</span>
-                <span>555 SF</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="unit-card">
-            <div class="unit-card__image" data-lightbox="images/3d/apt5.png" data-caption="Apartment 5 — 3D View — 2 Bed / 1 Bath / 884 SF">
-              <img src="images/3d/apt5.webp" alt="Apartment 5 furnished 3D floor plan" loading="lazy">
-              <div class="unit-card__zoom">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-                  <path d="M11 8v6M8 11h6"/>
-                </svg>
-              </div>
-            </div>
-            <div class="unit-card__content">
-              <h3>Apartment 5</h3>
-              <div class="unit-card__details">
-                <span>2 Bed</span>
-                <span>1 Bath</span>
-                <span>884 SF</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="unit-card">
-            <div class="unit-card__image" data-lightbox="images/3d/apt6.png" data-caption="Apartment 6 — 3D View — 2 Bed / 2 Bath / 1,196 SF">
-              <img src="images/3d/apt6.webp" alt="Apartment 6 furnished 3D floor plan" loading="lazy">
-              <div class="unit-card__zoom">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
-                  <path d="M11 8v6M8 11h6"/>
-                </svg>
-              </div>
-            </div>
-            <div class="unit-card__content">
-              <h3>Apartment 6</h3>
-              <div class="unit-card__details">
-                <span>2 Bed</span>
-                <span>2 Bath</span>
-                <span>1,196 SF</span>
-              </div>
-            </div>
-          </div>
-        </div>
 
         <!-- Amenities -->
         <h3 class="mt-5 mb-3">Apartment Amenities</h3>

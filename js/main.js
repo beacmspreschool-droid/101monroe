@@ -117,10 +117,14 @@ document.addEventListener('DOMContentLoaded', function() {
   galleryItems.forEach((item, index) => {
     lightboxImages.push({
       src: item.dataset.lightbox,
-      caption: item.dataset.caption || ''
+      caption: item.dataset.caption || '',
+      el: item
     });
-    
+
     item.addEventListener('click', function() {
+      // Re-read src/caption in case showcase updated them
+      lightboxImages[index].src = item.dataset.lightbox;
+      lightboxImages[index].caption = item.dataset.caption || '';
       currentLightboxIndex = index;
       openLightbox();
     });
@@ -292,6 +296,53 @@ document.addEventListener('DOMContentLoaded', function() {
   const yearSpan = document.querySelector('.current-year');
   if (yearSpan) {
     yearSpan.textContent = new Date().getFullYear();
+  }
+
+  // ---------- 3D Showcase Thumbnail Switcher ----------
+  const showcaseThumbs = document.querySelectorAll('.showcase__thumb');
+  const showcasePreview = document.querySelector('.showcase__preview');
+
+  if (showcasePreview && showcaseThumbs.length) {
+    const previewImg = showcasePreview.querySelector('.showcase__image');
+    const previewName = showcasePreview.querySelector('.showcase__name');
+    const previewDetails = showcasePreview.querySelector('.showcase__details');
+    const previewBadge = showcasePreview.querySelector('.showcase__badge');
+
+    showcaseThumbs.forEach(function(thumb) {
+      thumb.addEventListener('click', function() {
+        // Update active state
+        showcaseThumbs.forEach(function(t) { t.classList.remove('is-active'); });
+        thumb.classList.add('is-active');
+
+        // Swap preview content
+        previewImg.src = thumb.dataset.img;
+        previewImg.alt = thumb.dataset.name + ' furnished 3D floor plan';
+        previewName.textContent = thumb.dataset.name;
+        previewDetails.innerHTML = thumb.dataset.specs;
+
+        // Update lightbox data attributes
+        showcasePreview.dataset.lightbox = thumb.dataset.full;
+        showcasePreview.dataset.caption = thumb.dataset.name + ' — 3D View — ' + thumb.dataset.specs.replace(/&bull;/g, '/').replace(/<[^>]*>/g, '');
+
+        // Update badge
+        var badgeText = thumb.dataset.badge;
+        var badgeType = thumb.dataset.badgeType;
+        previewBadge.textContent = badgeText;
+        previewBadge.className = 'showcase__badge';
+        if (badgeType) {
+          previewBadge.classList.add('showcase__badge--' + badgeType);
+        }
+
+        // Re-register this element in the lightbox array
+        var lbIndex = lightboxImages.findIndex(function(item) {
+          return item.el === showcasePreview;
+        });
+        if (lbIndex !== -1) {
+          lightboxImages[lbIndex].src = thumb.dataset.full;
+          lightboxImages[lbIndex].caption = showcasePreview.dataset.caption;
+        }
+      });
+    });
   }
 
   // ---------- Intersection Observer for Animations ----------
