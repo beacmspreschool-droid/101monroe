@@ -920,5 +920,109 @@
   </div>
 
   <script src="js/main.js"></script>
+
+  <!-- Structured Data: LocalBusiness + ApartmentComplex -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ApartmentComplex",
+    "name": "101 Monroe",
+    "description": "Six boutique apartments in a beautifully restored 1868 historic building in downtown Brooklyn, Michigan. 1 and 2 bedroom units with in-unit washer/dryer, new kitchens, and modern finishes.",
+    "url": "https://101monroe.com",
+    "image": "https://101monroe.com/images/hero.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "101 Monroe Street",
+      "addressLocality": "Brooklyn",
+      "addressRegion": "MI",
+      "postalCode": "49230",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 42.1059,
+      "longitude": -84.2483
+    },
+    "email": "beatrice.nestor@gmail.com",
+    "numberOfAvailableAccommodation": 6,
+    "petsAllowed": true,
+    "amenityFeature": [
+      { "@type": "LocationFeatureSpecification", "name": "In-Unit Washer and Dryer", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "New Kitchens", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "New Bathrooms", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Modern Finishes", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Historic Building", "value": true },
+      { "@type": "LocationFeatureSpecification", "name": "Parking", "value": true }
+    ],
+    "containsPlace": [
+      {
+        "@type": "Apartment",
+        "name": "Apartment 1",
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 1,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 734,
+          "unitCode": "FTK"
+        }
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment 2",
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 1,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 655,
+          "unitCode": "FTK"
+        }
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment 3",
+        "numberOfBedrooms": 2,
+        "numberOfBathroomsTotal": 1,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 898,
+          "unitCode": "FTK"
+        }
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment 4",
+        "numberOfBedrooms": 1,
+        "numberOfBathroomsTotal": 1,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 555,
+          "unitCode": "FTK"
+        }
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment 5",
+        "numberOfBedrooms": 2,
+        "numberOfBathroomsTotal": 1,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 884,
+          "unitCode": "FTK"
+        }
+      },
+      {
+        "@type": "Apartment",
+        "name": "Apartment 6",
+        "numberOfBedrooms": 2,
+        "numberOfBathroomsTotal": 2,
+        "floorSize": {
+          "@type": "QuantitativeValue",
+          "value": 1196,
+          "unitCode": "FTK"
+        }
+      }
+    ]
+  }
+  </script>
 </body>
 </html>
