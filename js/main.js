@@ -238,6 +238,36 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
+  // ---------- Carousel ----------
+  document.querySelectorAll('[data-carousel]').forEach(function(carousel) {
+    const track = carousel.querySelector('[data-carousel-track]');
+    const prev = carousel.querySelector('.carousel__btn--prev');
+    const next = carousel.querySelector('.carousel__btn--next');
+    if (!track) return;
+
+    function updateButtonState() {
+      const atStart = track.scrollLeft <= 4;
+      const atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 4;
+      if (prev) prev.setAttribute('aria-disabled', atStart);
+      if (next) next.setAttribute('aria-disabled', atEnd);
+    }
+
+    if (next) {
+      next.addEventListener('click', function() {
+        track.scrollBy({ left: track.clientWidth, behavior: 'smooth' });
+      });
+    }
+    if (prev) {
+      prev.addEventListener('click', function() {
+        track.scrollBy({ left: -track.clientWidth, behavior: 'smooth' });
+      });
+    }
+
+    track.addEventListener('scroll', updateButtonState, { passive: true });
+    window.addEventListener('resize', updateButtonState);
+    updateButtonState();
+  });
+
   // ---------- Intersection Observer for Animations ----------
   const observerOptions = {
     root: null,
