@@ -191,10 +191,9 @@ document.addEventListener('DOMContentLoaded', function() {
   // ---------- 3D Showcase Thumbnail Switcher ----------
   const showcaseThumbs = document.querySelectorAll('.showcase__thumb');
   const showcaseViewer = document.querySelector('.showcase__viewer');
-  const showcasePrescreenBtn = document.querySelector('.showcase__btn-prescreen');
   const showcaseActions = document.querySelector('.showcase__actions');
 
-  // Don't trigger the lightbox when clicking the action buttons inside the viewer
+  // Don't trigger the lightbox when clicking the action button inside the viewer
   if (showcaseActions) {
     showcaseActions.addEventListener('click', function(e) {
       e.stopPropagation();
@@ -217,11 +216,9 @@ document.addEventListener('DOMContentLoaded', function() {
         previewName.textContent = thumb.dataset.name;
         previewDetails.innerHTML = thumb.dataset.specs;
 
-        // Update the lightbox source on the viewer
         showcaseViewer.dataset.lightbox = thumb.dataset.full;
         showcaseViewer.dataset.caption = thumb.dataset.name + ' — 3D View — ' + thumb.dataset.specs.replace(/&bull;/g, '/').replace(/<[^>]*>/g, '');
 
-        // Update badge
         var badgeText = thumb.dataset.badge;
         var badgeType = thumb.dataset.badgeType;
         previewBadge.textContent = badgeText;
@@ -230,12 +227,6 @@ document.addEventListener('DOMContentLoaded', function() {
           previewBadge.classList.add('showcase__badge--' + badgeType);
         }
 
-        // Update the Get Pre-Screened button URL for this unit
-        if (showcasePrescreenBtn && thumb.dataset.prescreen) {
-          showcasePrescreenBtn.href = thumb.dataset.prescreen;
-        }
-
-        // Sync the showcase entry in the lightbox array
         var lbIndex = lightboxImages.findIndex(function(item) {
           return item.el === showcaseViewer;
         });

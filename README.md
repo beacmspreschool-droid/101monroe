@@ -14,7 +14,7 @@ A single-page leasing website for Monroe Residences boutique apartments in Brook
 └── images/
     ├── hero.png        # Exterior rendering (hero)
     ├── IMG_4280.JPG    # Leasing team photo
-    ├── ChatGPT Image May 28, 2026, 02_51_20 PM.png  # The Brokerage House logo
+    ├── brokerage-house-logo.jpg  # The Brokerage House logo
     ├── 3d/             # 3D apartment renderings
     ├── floorplans/     # 2D floor plans
     ├── renderings/     # Interior renderings
@@ -27,12 +27,12 @@ A single-page leasing website for Monroe Residences boutique apartments in Brook
 
 ## Leasing Team
 
-Tours and pre-screening are handled by The Brokerage House:
+Tours and applications are handled by The Brokerage House:
 
 - **Lillian Wooster** — 517-745-4574 — lillywooster@gmail.com
 - **Jenifer Scanlon** — 734-664-6789 — jeniferscanlon@gmail.com
 
-Pre-screening is hosted on TurboTenant (one unique link per unit, embedded in the apartment showcase).
+The "Schedule a Tour" CTA throughout the site opens a prefilled mailto to both agents.
 
 ---
 
@@ -73,10 +73,6 @@ Edit the "Construction Progress" section in `index.html`:
 - Change the date in `.progress-update__date`
 - Update the bullet points in `.progress-update__list`
 - Add new progress photos under `images/progress/`
-
-### Update the pre-screen link for a unit
-
-Each `.showcase__thumb` has a `data-prescreen="..."` attribute that points at that unit's TurboTenant link. The JS swaps the "Get Pre-Screened" button URL whenever the user selects a different thumbnail.
 
 ---
 
